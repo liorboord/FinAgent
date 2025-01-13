@@ -12,8 +12,8 @@ FinAgent is a lightweight financial AI agent that leverages OpenAI's GPT-4 and t
 ---
 
 ## **Medium Article**
-Read the detailed walkthrough of this project on Medium: [Supercharging Applications with Hybrid Agents](#)  
-(*Add the link to your Medium article here*)
+Read a walkthrough of this project on Medium: [The Hybrid AI Agent: Integrating ChatGPT with External API](https://medium.com/@liorboord/the-hybrid-ai-agent-integrating-chatgpt-with-external-api-cbd11a165b0e)
+
 
 ---
 
