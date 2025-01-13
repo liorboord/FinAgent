@@ -1,4 +1,4 @@
 import os
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
-ALPHAV_API_KEY = os.environ.get("ALPHAV_API_KEY")
+OPENAI_API_KEY = "your_openai_api_key"
+ALPHAV_API_KEY = "your_alpha_vantage_api_key"
