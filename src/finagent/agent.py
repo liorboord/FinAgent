@@ -1,14 +1,16 @@
 import openai_client
 import function_definitions
 import alphavantage_client
-import config
 import json
+from dotenv import load_dotenv
+import os
 
 class Agent:
     def __init__(self):
+        load_dotenv()
         openai_client_instructions = "You are a helpful assistant. You can call functions to get stock data when needed."
-        self.openai_client = openai_client.OpenAIClient(config.OPENAI_API_KEY, openai_client_instructions)
-        self.alphav_client = alphavantage_client.AlphaVantageClient(config.ALPHAV_API_KEY)
+        self.openai_client = openai_client.OpenAIClient(os.getenv("OPENAI_API_KEY"), openai_client_instructions)
+        self.alphav_client = alphavantage_client.AlphaVantageClient(os.getenv("ALPHAV_API_KEY"))
         self.functions = function_definitions.functions
 
     def run_conversation(self, user_input: str, functions: list = [], alpha_api_key: str = "demo"):

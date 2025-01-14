@@ -1,5 +1,3 @@
-import function_definitions
-import config
 import openai
 import json
 

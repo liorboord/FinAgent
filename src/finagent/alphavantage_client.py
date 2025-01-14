@@ -1,11 +1,10 @@
-import config
 import requests
 
 class AlphaVantageClient:
     ALPHAVANTAGE_BASE_URL = "https://www.alphavantage.co/query"
 
     def __init__(self, api_key):
-        self.api_key = config.ALPHAV_API_KEY
+        self.api_key = api_key
 
     def call_alpha_vantage(self, function_name: str, params: dict) -> dict:
         query_params = params.copy()
